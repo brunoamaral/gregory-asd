@@ -55,7 +55,7 @@ function Article(props) {
   const date = new Date(props.article.published_date);
 	return ( <div>
     <span className="text-base font-medium leading-tight text-gray-500 dark:text-white">{formatDate(date)}</span>
-				<h4 className="mb-4 text-2xl font-extrabold tracking-tight text-purple-600 dark:text-purple-400 underline">
+				<h4 className="mb-4 text-2xl font-bold tracking-tight text-purple-600 dark:text-purple-400 ">
 				<a className='mr-3' href={props.article.link} target="_blank" rel="noopener noreferrer">{props.article.title}
         </a>
         <FontAwesomeIcon icon={faArrowUpRightFromSquare} color='rgb(107 114 128)' className='h-4' />
