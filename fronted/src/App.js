@@ -113,7 +113,7 @@ function ArticlesList() {
 
   useEffect(() => {
     async function fetchData() {
-      const response = await axios.get(`https://api.autism.gregory-ai.com/articles/relevant/?format=json&page=${page}`);
+      const response = await axios.get(`https://api.autism.gregory-ai.com/articles/?format=json&page=${page}`);
       setArticles(response.data.results);
 			setLastPage(Math.ceil(response.data.count / 10));
     }
