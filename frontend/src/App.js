@@ -25,7 +25,7 @@ function Header() {
 				<p className="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
 				Gregory is an <strong className="font-medium text-purple-600 dark:text-purple-400">Artificial Intelligence research assistant</strong> that scouts trustworthy sources in any field, indexing and filtering the results into a searchable database.</p>
 				<p className="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
-				The list below is a compilation of real time results for scientific articles around Autism Spectrum Disorder.
+				The list below is a compilation of real time results for scientific articles around Autism Spectrum Disorder found on PubMed with the search <em>"Autism Spectrum Disorder"[Title] AND "child"[Title]</em>. Text below the title is an AI summary of the abstract.
 				</p>
 				<div className="space-y-4 sm:flex sm:space-y-0 sm:space-x-4">
 				<a href="https://gregory-ms.com/" target="_blank" className="inline-flex items-center justify-center w-full px-5 py-3 text-sm font-medium text-center text-white border border-gray-200 rounded-lg sm:w-auto focus:ring-4 focus:ring-purple-500 dark:text-white dark:border-gray-700 dark:hover:bg-purple-500 dark:focus:ring-purple-500 bg-purple-600 shadow-sm hover:bg-purple-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-purple-600 umami--click--gregoryms-usecase-header">
