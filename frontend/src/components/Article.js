@@ -3,6 +3,7 @@ import axios from 'axios';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleLeft, faAngleDoubleLeft, faAngleRight, faAngleDoubleRight, faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
 import { useParams } from 'react-router-dom';
+import Nav from './Nav';
 
 const API_URL = process.env['REACT_APP_API_URL'];
 
@@ -25,13 +26,18 @@ const Article = () => {
   }, [article_id, page]);
 
   return (
-    <div>
-      <h2>{article.title}</h2>
-			<h3>Key takeaways</h3>
-			<p>{article.takeaways}</p>
-			<h3>Abstract</h3>
-      <p>{article.summary}</p>
-    </div>
+	<div>
+		<Nav />
+		<section className="bg-gray-100 dark:bg-gray-800 pt-20 pb-10 px-4 sm:px-6 lg:px-8">
+			<div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+				<h2 className="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-4">{article.title}</h2>
+				<h3 className="text-2xl font-semibold text-gray-800 dark:text-gray-200 mb-2">Key takeaways</h3>
+				<p className="text-lg text-gray-700 dark:text-gray-300 mb-6">{article.takeaways}</p>
+				<h3 className="text-2xl font-semibold text-gray-800 dark:text-gray-200 mb-2">Abstract</h3>
+				<p className="text-lg text-gray-700 dark:text-gray-300">{article.summary}</p>
+			</div>
+		</section>
+	</div>
   );
 };
 function formatDate(date) {
@@ -53,7 +59,7 @@ function ArticleSnippet(props) {
 	return ( <div>
     <span className="text-base font-medium leading-tight text-gray-500 dark:text-white">{formatDate(date)}</span>
 				<h4 className="mb-4 text-2xl font-bold tracking-tight text-purple-600 dark:text-purple-400 ">
-				<a className='mr-3' href={generateArticleURL(props.article)} target="_blank" rel="noopener noreferrer">{props.article.title}
+				<a className='mr-3' href={generateArticleURL(props.article)} rel="noopener noreferrer">{props.article.title}
         </a>
         <FontAwesomeIcon icon={faArrowUpRightFromSquare} color='rgb(107 114 128)' className='h-4' />
 				</h4>
