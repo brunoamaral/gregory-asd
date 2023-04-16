@@ -39,7 +39,6 @@ const Home = () => {
 			</section>
 
 			<ArticlesList />
-			<NameForm />
 		</>
 	);
 };
