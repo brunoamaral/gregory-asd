@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAngleLeft, faAngleDoubleLeft, faAngleRight, faAngleDoubleRight, faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
+import { faAngleLeft, faAngleDoubleLeft, faAngleRight, faAngleDoubleRight } from '@fortawesome/free-solid-svg-icons';
 import { useParams } from 'react-router-dom';
 import Nav from './Nav';
 
@@ -43,7 +43,6 @@ const Article = () => {
 				<h3 className="text-2xl font-semibold text-gray-800 dark:text-gray-200 mb-2">Key takeaways</h3>
 				<p className="text-lg text-gray-700 dark:text-gray-300 mb-6">{article.takeaways}</p>
 				<h3 className="text-2xl font-semibold text-gray-800 dark:text-gray-200 mb-2">Abstract</h3>
-				
 				<p className="text-lg text-gray-700 dark:text-gray-300" dangerouslySetInnerHTML={{ __html: article.summary }}></p>
 			</div>
 		</section>
@@ -71,7 +70,6 @@ function ArticleSnippet(props) {
 				<h4 className="mb-4 text-2xl font-bold tracking-tight text-purple-600 dark:text-purple-400 ">
 				<a className='mr-3' href={generateArticleURL(props.article)} rel="noopener noreferrer">{props.article.title}
         </a>
-        <FontAwesomeIcon icon={faArrowUpRightFromSquare} color='rgb(107 114 128)' className='h-4' />
 				</h4>
 				<p className="font-medium text-gray-600 dark:text-gray-400">
 				  {props.article.takeaways}
