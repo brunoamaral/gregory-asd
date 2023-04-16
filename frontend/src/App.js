@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleLeft, faAngleDoubleLeft, faAngleRight, faAngleDoubleRight, faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
 import 'flowbite/dist/flowbite.min.css';
 import logo from './images/logo.svg';
+const API_URL = process.env['REACT_APP_API_URL'];
 
 function formatDate(date) {
   const options = {
@@ -113,7 +114,7 @@ function ArticlesList() {
 
   useEffect(() => {
     async function fetchData() {
-      const response = await axios.get(`https://api.autism.gregory-ai.com/articles/?format=json&page=${page}`);
+      const response = await axios.get(`${API_URL}/articles/?format=json&page=${page}`);
       setArticles(response.data.results);
 			setLastPage(Math.ceil(response.data.count / 10));
     }
