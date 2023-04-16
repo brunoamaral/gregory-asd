@@ -31,6 +31,15 @@ const Article = () => {
 		<section className="bg-gray-100 dark:bg-gray-800 pt-20 pb-10 px-4 sm:px-6 lg:px-8">
 			<div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
 				<h2 className="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-4">{article.title}</h2>
+				<a
+        href={article.link}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="inline-flex items-center px-6 py-2 text-lg font-semibold text-white bg-indigo-600 rounded-lg hover:bg-indigo-500 transition-colors duration-200"
+      	>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" className="w-4 h-4 mr-2 text-white dark:text-gray-400"><path d="M432,320H400a16,16,0,0,0-16,16V448H64V128H208a16,16,0,0,0,16-16V80a16,16,0,0,0-16-16H48A48,48,0,0,0,0,112V464a48,48,0,0,0,48,48H400a48,48,0,0,0,48-48V336A16,16,0,0,0,432,320ZM488,0h-128c-21.37,0-32.05,25.91-17,41l35.73,35.73L135,320.37a24,24,0,0,0,0,34L157.67,377a24,24,0,0,0,34,0L435.28,133.32,471,169c15,15,41,4.5,41-17V24A24,24,0,0,0,488,0Z" fill="currentColor"></path></svg>
+        Open Article
+      	</a>
 				<h3 className="text-2xl font-semibold text-gray-800 dark:text-gray-200 mb-2">Key takeaways</h3>
 				<p className="text-lg text-gray-700 dark:text-gray-300 mb-6">{article.takeaways}</p>
 				<h3 className="text-2xl font-semibold text-gray-800 dark:text-gray-200 mb-2">Abstract</h3>
