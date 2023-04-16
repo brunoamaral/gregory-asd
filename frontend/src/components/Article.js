@@ -2,11 +2,13 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleLeft, faAngleDoubleLeft, faAngleRight, faAngleDoubleRight, faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
+import { useParams } from 'react-router-dom';
+
 const API_URL = process.env['REACT_APP_API_URL'];
 
-const Article = (props) => {
+const Article = () => {
   const [article, setArticle] = useState({});
-  const { article_id } = props.match.params;
+  const { article_id } = useParams();
   const page = 1; // Or use useState to handle pagination
 
   useEffect(() => {
@@ -24,8 +26,11 @@ const Article = (props) => {
 
   return (
     <div>
-      <h1>{article.title}</h1>
-      <p>{article.content}</p>
+      <h2>{article.title}</h2>
+			<h3>Key takeaways</h3>
+			<p>{article.takeaways}</p>
+			<h3>Abstract</h3>
+      <p>{article.summary}</p>
     </div>
   );
 };
