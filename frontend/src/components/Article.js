@@ -43,7 +43,8 @@ const Article = () => {
 				<h3 className="text-2xl font-semibold text-gray-800 dark:text-gray-200 mb-2">Key takeaways</h3>
 				<p className="text-lg text-gray-700 dark:text-gray-300 mb-6">{article.takeaways}</p>
 				<h3 className="text-2xl font-semibold text-gray-800 dark:text-gray-200 mb-2">Abstract</h3>
-				<p className="text-lg text-gray-700 dark:text-gray-300">{article.summary}</p>
+				
+				<p className="text-lg text-gray-700 dark:text-gray-300" dangerouslySetInnerHTML={{ __html: article.summary }}></p>
 			</div>
 		</section>
 	</div>
