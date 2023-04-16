@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import { Header, Nav, ArticlesList } from './App';
 import reportWebVitals from './reportWebVitals';
+import NameForm from './NameForm';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -10,6 +11,7 @@ root.render(
     <Nav />
     <Header/>
     <ArticlesList />
+    <NameForm />
   </React.StrictMode>
 );
 
