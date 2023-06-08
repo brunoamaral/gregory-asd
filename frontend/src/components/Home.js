@@ -20,6 +20,12 @@ const Home = () => {
 				The list below is a compilation of real time results for scientific articles around Autism Spectrum Disorder found on PubMed with the search <em>"Autism Spectrum Disorder"[Title] AND "child"[Title]</em>. Text below the title is an AI summary of the abstract.
 				</p>
 				<div className="space-y-4 sm:flex sm:space-y-0 sm:space-x-4">
+				<a href="https://gregory-ai.com/" target="_blank" rel="noreferrer" className="inline-flex items-center justify-center w-full px-5 py-3 text-sm font-medium text-center text-white border border-gray-200 rounded-lg sm:w-auto focus:ring-4 focus:ring-blue-500 dark:text-white dark:border-gray-700 dark:hover:bg-blue-500 dark:focus:ring-blue-500 bg-blue-600 shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 umami--click--gregoryms-usecase-header">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" className="w-4 h-4 mr-2 text-gray-500 dark:text-gray-400">
+					<path d="M432,320H400a16,16,0,0,0-16,16V448H64V128H208a16,16,0,0,0,16-16V80a16,16,0,0,0-16-16H48A48,48,0,0,0,0,112V464a48,48,0,0,0,48,48H400a48,48,0,0,0,48-48V336A16,16,0,0,0,432,320ZM488,0h-128c-21.37,0-32.05,25.91-17,41l35.73,35.73L135,320.37a24,24,0,0,0,0,34L157.67,377a24,24,0,0,0,34,0L435.28,133.32,471,169c15,15,41,4.5,41-17V24A24,24,0,0,0,488,0Z" fill="white"></path>
+					</svg>
+					GregoryAI
+				</a>
 				<a href="https://gregory-ms.com/" target="_blank" rel="noreferrer" className="inline-flex items-center justify-center w-full px-5 py-3 text-sm font-medium text-center text-white border border-gray-200 rounded-lg sm:w-auto focus:ring-4 focus:ring-purple-500 dark:text-white dark:border-gray-700 dark:hover:bg-purple-500 dark:focus:ring-purple-500 bg-purple-600 shadow-sm hover:bg-purple-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-purple-600 umami--click--gregoryms-usecase-header">
 					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" className="w-4 h-4 mr-2 text-gray-500 dark:text-gray-400">
 					<path d="M432,320H400a16,16,0,0,0-16,16V448H64V128H208a16,16,0,0,0,16-16V80a16,16,0,0,0-16-16H48A48,48,0,0,0,0,112V464a48,48,0,0,0,48,48H400a48,48,0,0,0,48-48V336A16,16,0,0,0,432,320ZM488,0h-128c-21.37,0-32.05,25.91-17,41l35.73,35.73L135,320.37a24,24,0,0,0,0,34L157.67,377a24,24,0,0,0,34,0L435.28,133.32,471,169c15,15,41,4.5,41-17V24A24,24,0,0,0,488,0Z" fill="white"></path>
